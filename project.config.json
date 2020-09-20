@@ -25,12 +25,12 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
-		"useCompilerModule": false,
+		"useCompilerModule": true,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"appid": "wx33fdff2aa1b96dc7",
 	"projectname": "cloud_todo",
-	"libVersion": "2.8.1",
+	"libVersion": "2.12.2",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
@@ -49,13 +49,32 @@
 		"game": {
 			"list": []
 		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
 		"miniprogram": {
 			"current": 0,
 			"list": [
 				{
 					"id": -1,
 					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide"
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "addTodo",
+					"pathName": "pages/addTodo/addTodo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "todoInfo",
+					"pathName": "pages/todoInfo/todoInfo",
+					"query": "id=994c5b685f6222e1001a1f43260bc2aa",
+					"scene": null
 				}
 			]
 		}
