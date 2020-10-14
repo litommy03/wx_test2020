@@ -25,7 +25,7 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
-		"useCompilerModule": false,
+		"useCompilerModule": true,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"appid": "wx33fdff2aa1b96dc7",
@@ -70,10 +70,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 2,
 					"name": "todoInfo",
 					"pathName": "pages/todoInfo/todoInfo",
-					"query": "id=994c5b685f6222e1001a1f43260bc2aa",
+					"query": "id=b8df3bd65f869e6e015387a21d048678",
 					"scene": null
 				}
 			]

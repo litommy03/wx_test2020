@@ -5,5 +5,13 @@
         value="{{task.status == 'in-progress'?'待完成':'已完成'}}" 
         border="{{ false }}" 
       />
+      <van-cell 
+        wx:if="{{task.location}}"
+        title="位置" 
+        icon="location"
+        border="{{ false }}" 
+        value="{{task.location.name}}" 
+        bind:click="viewLocation" 
+      />
 </van-cell-group>
 <image wx:if="{{task.image}}" src="{{task.image}}"></image>

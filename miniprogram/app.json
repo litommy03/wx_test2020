@@ -17,9 +17,10 @@
     "van-cell-group": "@vant/weapp/cell-group/index",
     "van-icon": "@vant/weapp/icon"
   },
-  "permission":{
-    "scope.userLocation":{
+  "permission": {
+    "scope.userLocation": {
       "desc": "你的位置信息将用于任务的设置"
     }
-  }
+  },
+  "sitemapLocation": "sitemap18.json"
 }

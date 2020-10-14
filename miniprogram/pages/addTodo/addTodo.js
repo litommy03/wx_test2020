@@ -10,6 +10,7 @@ Page({
     locationObj:{}
   },
   onSubmit:function(event){
+    //console.log(event.detail.formId)
     //console.log(event.detail.value.title)
     todos.add({
       data:{
@@ -18,6 +19,13 @@ Page({
         location:this.pageData.locationObj
       }
     }).then(res=>{
+      wx.cloud.callFunction({
+        name:'msgMe',
+        data:{
+          formId: event.detail.formId,
+          taskId: res._id
+        }
+      })
       wx.showToast({
         title: '添加成功',
         icon:'success',
