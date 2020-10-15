@@ -25,7 +25,7 @@ Page({
           formId: event.detail.formId,
           taskId: res._id
         }
-      })
+      }).then(console.log)
       wx.showToast({
         title: '添加成功',
         icon:'success',
