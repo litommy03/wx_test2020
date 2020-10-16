@@ -12,11 +12,19 @@ Page({
   onSubmit:function(event){
     //console.log(event.detail.formId)
     //console.log(event.detail.value.title)
+    let myDate = new Date;
+    let year = myDate.getFullYear();
+    let month = myDate.getMonth() + 1;
+    let day = myDate.getDay();
+    let myTime = `${year}-${month}-${day} ${this.data.time}`;
+    console.log(myTime);
     todos.add({
       data:{
         title:event.detail.value.title,
         image:this.data.image,
-        location:this.pageData.locationObj
+        location:this.pageData.locationObj,
+        time: myTime,
+        formId: event.detail.formId
       }
     }).then(res=>{
       wx.cloud.callFunction({
@@ -35,6 +43,12 @@ Page({
           })
         }
       })
+    })
+  },
+  bindTimeChange:function(event){
+    // console.log(event.detail.value)
+    this.setData({
+      time: event.detail.value
     })
   },
   selectImage:function(e){
