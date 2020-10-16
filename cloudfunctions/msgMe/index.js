@@ -5,6 +5,8 @@ const {
   WXMINIMessage
 } = require('wx-js-utils');
 
+
+
 const appId = 'wx33fdff2aa1b96dc7'; // 小程序 appId
 const secret = '9c09b520de5ef7e54e3a717b7580a8af'; // 小程序 secret
 const template_id = 'O5MatAAgF5Ce8NSLgcSbMfxwDxbyxQ-wGGGcfJzPhy0'; // 小程序模板消息模板 id
